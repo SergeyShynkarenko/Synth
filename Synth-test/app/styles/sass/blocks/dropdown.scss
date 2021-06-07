@@ -1,0 +1,79 @@
+.btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+    background-color: transparent;
+    border: none;
+}
+
+ .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+.btn {
+    padding: 0;
+    &:hover {
+    color: transparent;
+    }
+    &-secondary {
+        color: #fff;
+        background-color: transparent;
+        border: none;
+        &:focus {
+            background-color: transparent;
+            border: none;
+            box-shadow: none; 
+        }
+        &:hover {
+            background-color: transparent;
+        }
+    }
+}
+
+.dropdown {
+    &-toggle::after {
+        display: none;
+    }
+    &-item {
+        font-weight: 600;
+        padding: 8px 0 8px 24px;
+        img {
+            margin-right: 16px;
+        }
+        span {
+          @media (max-width: 430px) {
+            font-size: 15px;
+          }  
+        }
+        @media (max-width: 576px) {
+            padding: 8px;
+        }
+    }
+    &-menu {
+        width: 176px;
+        padding: 24px 0 30px;
+        border-radius: 8px;
+        border: none;
+        opacity: 0.94;
+        margin: 11px -17px 0;
+        @media (max-width: 660px) {
+            margin: 30px -70px 0;
+        }
+        @media (max-width: 660px) {
+            margin: 30px -90px 0;
+        }
+        @media (max-width: 576px) {
+            padding: 0;
+            width: 165px;
+            margin: 35px -130px 0;
+        }
+        @media (max-width: 430px) {
+           margin: 35px -150px 0; 
+        }
+        @media (max-width: 430px) {
+           margin: 35px -180px 0; 
+        }
+    }  
+}
+
+
+
+
+
